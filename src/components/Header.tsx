@@ -29,11 +29,11 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md py-2 md:py-2.5' : 'bg-transparent py-3 md:py-4'
+        scrolled ? 'bg-white shadow-md py-0 md:py-2' : 'bg-transparent py-0 md:py-3'
       }`}
     >
       <div className="section-container md:py-1">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center min-h-[18px] md:min-h-[48px]">
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             className="flex items-center"
           >
             <div className="flex items-center">
-              <span className="font-bold text-2xl md:text-2xl text-bee-black">
+              <span className="font-bold text-lg md:text-2xl text-bee-black">
                 Bee<span className="text-bee-yellow">Class</span>
               </span>
             </div>
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <svg
-                className="h-6 w-6"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

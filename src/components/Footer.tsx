@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-50 text-gray-900 py-6">
+    <footer id="footer" className="bg-gray-50 text-gray-900 py-6">
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Контактная информация */}

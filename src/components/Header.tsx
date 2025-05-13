@@ -21,10 +21,9 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: 'Главная', href: '#hero' },
-    { name: 'Курсы', href: '#courses' },
-    { name: 'Преподаватели', href: '#teachers' },
-    { name: 'Отзывы', href: '#testimonials' },
-    { name: 'Контакты', href: '#contact' }
+    { name: 'Тест', href: '#level-test' },
+    { name: 'Преподаватели', href: '#' },
+    { name: 'Контакты', href: '#footer' }
   ];
 
   return (
